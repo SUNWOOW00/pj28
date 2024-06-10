@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "sans";
+    src: url(font/sans.ttf);
+}
+
+body {
+    background-color: #19172e;
+    font-family: "sans", sans-serif; /* Added fallback font */
+    color: white;
+    margin: 8px auto;
+    padding-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.section {
+    width: 400px;
+    margin: 40px auto;
+    padding: 10px;
+    border-radius: 20px; /* Combined border-radius declarations */
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px); /* Removed extra space */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    background: none;
+    width: 274px;
+    color: white;
+}
+
+input[type="text"]::placeholder {
+    color: lightgray;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.controls {
+    width: 294px; /* Adjusted width to accommodate buttons */
+    margin: 15px auto;
+    text-align: center; /* Centered the buttons */
+}
+
+.controls button {
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px; /* Added margin to separate buttons */
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#add_fields {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#remove_fields {
+    background-color: #ee052c; /* Red */
+    color: white;
+}
